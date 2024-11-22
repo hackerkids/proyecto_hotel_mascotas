@@ -1,0 +1,41 @@
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+git push -u origin main
+
+actualizar repositorio local (git pull origin main)
+
+
+ git push origin main --force  (forzar la subida al repositorio en linea a github)
+
+--------------------------------------------------------------------------------------
+Primero, asegúrate de estar en la rama master:
+git checkout master
+
+Luego, cambia el nombre de la rama de master a main:
+git branch -m master main
+
+Empuja la nueva rama main a tu repositorio remoto en GitHub:
+git push -u origin main
+
+
+Eliminar la rama master del repositorio remoto (opcional)
+Una vez que hayas cambiado la rama predeterminada a main, puedes eliminar la rama master del repositorio remoto:
+git push origin --delete master
+
+------------------------------------------------------------------------
+# Cambiar el nombre de la rama localmente
+git checkout master
+git branch -m master main
+
+# Empujar la nueva rama 'main' al repositorio remoto
+git push -u origin main
+
+# Eliminar la rama 'master' del repositorio remoto (opcional)
+git push origin --delete master
+-------------------------------------------------------------------------
