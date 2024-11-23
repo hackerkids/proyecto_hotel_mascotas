@@ -122,16 +122,102 @@ header {
 }
 
 .main_maqueta {
-    border: 1px solid red;
+  
+  
+   /*  border: 1px solid red; */
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: rgba(167, 172, 230, 0.203);
+
+  
+
+    .mural_1{
+        display: flex;
+        justify-content:center;
+        gap: 20px;
+        padding: 50px;
+        width: auto;
+        height: auto;
+        /* border: 1px solid rgb(94, 5, 5); */
+
+        .capa_texto_1{
+            font-family: 'Sour Gummy', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          
+            font-size: 20px;
+            
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+
+    .mural_2{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-family: 'Sour Gummy', cursive;
+        padding: 50px;
+        width: auto;
+        height: auto;
+       /*  border: 1px solid rgb(94, 5, 5); */
+
+       .capa_texto_2{
+        font-family: 'Sour Gummy', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        font-size: 20px;
+        
+    }
+
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+
+    .mural_3{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-family: 'Sour Gummy', cursive;
+        padding: 50px;
+        width: auto;
+        height: auto;
+        /* border: 1px solid rgb(94, 5, 5); */
+
+        .capa_texto_3{
+            font-family: 'Sour Gummy', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          
+            font-size: 20px;
+            
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+    
 }
 
 
 main {
-
-
 
     margin-top: 10px;
     width: 100%;
