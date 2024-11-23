@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Rutas
 app.get('/', (req, res) => {
   res.render('index', { titulo: 'Home', seccion: 'index' });
+
 });
 
 app.get('/nosotros', (req, res) => {
@@ -25,44 +26,13 @@ app.get('/servicios', (req, res) => {
 
 app.get('/galeria', (req, res) => {
   res.render('index', { titulo: 'Galería', seccion: 'galeria' });
+
 });
 
 app.get('/contacto', (req, res) => {
   res.render('index', { titulo: 'Contacto', seccion: 'contacto' });
+
 });
-
-// Servir plantillas parciales como texto plano
-app.get('/partial/:seccion', (req, res) => {
-  const seccion = req.params.seccion;
-  if (seccion === 'contacto') {
-    res.render('contacto', { layout: false });
-  } else {
-    res.status(404).send('Sección no encontrada');
-  }
-});
-
-// Manejador de errores para rutas no encontradas (404) 
-app.use((req, res, next) => {
-  res.status(404).render('error',
-    {
-      titulo: 'Página No Encontrada',
-      mensaje: 'Lo sentimos, la página que estás buscando no existe.'
-    });
-});
-
-// Manejador de errores del servidor (500) 
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).render('error',
-    {
-      titulo: 'Error Interno del Servidor',
-      mensaje: 'Ha ocurrido un error en el servidor. Por favor, intenta nuevamente más tarde.'
-    });
-});
-
-
-
-
 
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);

@@ -91,36 +91,47 @@ header {
             padding: 0;
 
             li {
+                color: rgb(255, 255, 255);
                 list-style-type: none;
                 font-size: 17px;
                 font-weight: bold;
-                padding: 10px
+                padding: 10px;
+
+                a {
+                    color: rgb(255, 255, 255);
+                    /*  text-align: center; */
+                    /*   padding: 14px 20px; */
+                    text-decoration: none;
+                    border-radius: 3px;
+                    /* border: 1px solid red; */
+                    transition: background-color 0.3s ease;
+
+                }
+
+
+
+
+
             }
         }
 
-        a {
-            color: rgb(255, 255, 255);
-            /*  text-align: center; */
-            /*   padding: 14px 20px; */
-            text-decoration: none;
-            border-radius: 3px;
-            /* border: 1px solid red; */
-            transition: background-color 0.3s ease;
 
-        }
 
     }
 
 }
 
+.main_maqueta {
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(167, 172, 230, 0.203);
+}
+
+
 main {
 
-    .main_maqueta{
-        border: px solid red;
-        width: 100%;
-        height: 500px;
-        background-color: rgba(167, 172, 230, 0.203);
-    }
+
 
     margin-top: 10px;
     width: 100%;
@@ -170,9 +181,9 @@ main {
         background-color: rgba(167, 172, 230, 0.203);
         /* border: 1px solid red; */
 
-        .texto_contol_2{
+        .texto_contol_2 {
             position: absolute;
-           /*  border: 1px solid red; */
+            /*  border: 1px solid red; */
             width: 100%;
             height: auto;
             bottom: 1px;
@@ -257,14 +268,14 @@ footer {
         align-items: center;
         padding: 20px;
         /* border: 1px solid red; */
-    
+
 
         p {
             margin: 0;
             font-size: 15px;
             color: black;
             font-family: 'Sour Gummy', cursive;
-          /*   border: 1px solid red; */
+            /*   border: 1px solid red; */
         }
 
         span {
@@ -310,11 +321,11 @@ footer {
             gap: 10px;
             list-style-type: none;
             padding: 0;
-            
+
 
             li {
-                
-                a{
+
+                a {
                     text-decoration: none;
                     font-family: 'Sour Gummy', cursive;
                 }
