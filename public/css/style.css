@@ -28,6 +28,7 @@ header {
     /* border: 1px solid red; */
 
 
+
     .header_principal {
 
         height: 100%;
@@ -121,6 +122,44 @@ header {
 
 }
 
+.main_loging{
+         border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        background-color: rgba(167, 172, 230, 0.203);
+
+}
+
+.galeria{
+     /*  border: 1px solid red; */
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: auto;
+     background-color: rgba(167, 172, 230, 0.203);
+
+    .presentacion{
+        width: 700px;
+       
+        img{
+            width: 500px;
+            height: auto;
+            /* border: 1px solid green;
+            border-radius: 10px; */
+    
+        };
+
+        .custom-border {
+            border: 1px solid green;
+            border-radius: 10px; /* Ajusta el valor según la redondez que desees */
+        }
+        
+
+    }
+}
+
 .main_maqueta {
   
   
@@ -152,6 +191,8 @@ header {
         }
 
         img{
+            border: 1px solid green !important;
+            border-radius: 10px;
             width: 300px;
             height: 200px;
         }
@@ -180,6 +221,8 @@ header {
     }
 
         img{
+            border: 1px solid green !important;
+            border-radius: 10px;
             width: 300px;
             height: 200px;
         }
@@ -208,6 +251,8 @@ header {
         }
 
         img{
+            border: 1px solid green !important;
+            border-radius: 10px;
             width: 300px;
             height: 200px;
         }
@@ -235,18 +280,18 @@ main {
         gap: 60px;
         /* align-items: center; */
         background-color: rgba(167, 172, 230, 0.203);
-        /* border: 1px solid red; */
+       /*  border: 1px solid green; */
 
         .texto_control_1 {
 
             position: absolute;
-            /*  border: 1px solid red; */
+            /* border: 1px solid red; */
             width: 100%;
             height: auto;
             bottom: 1px;
             color: rgb(22, 22, 26);
-            font-size: 17px;
-            font-weight: bold;
+            font-size: 18px;
+            /* font-weight: bold; */
             font-family: 'Sour Gummy', cursive;
 
         }
@@ -257,7 +302,7 @@ main {
     .control_2 {
         position: relative;
         width: 100%;
-        height: 650px;
+        height: 700px;
         /*   margin-top: 30px; */
         margin-bottom: 30px;
         display: flex;
@@ -274,8 +319,8 @@ main {
             height: auto;
             bottom: 1px;
             color: rgb(22, 22, 26);
-            font-size: 17px;
-            font-weight: bold;
+            font-size: 18px;
+            /* font-weight: bold; */
             font-family: 'Sour Gummy', cursive;
 
         }

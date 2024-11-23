@@ -18,28 +18,28 @@ app.get('/', (req, res) => {
 app.get('/nosotros', (req, res) => {
   res.render('index', { titulo: 'Nosotros', seccion: 'nosotros' });
 });
-
+/* 
 app.get('/servicios', (req, res) => {
   res.render('index', { titulo: 'Servicios', seccion: 'servicios' });
-});
+}); */
 
 app.get('/galeria', (req, res) => {
   res.render('index', { titulo: 'Galería', seccion: 'galeria' });
 });
 
-app.get('/contacto', (req, res) => {
-  res.render('index', { titulo: 'Contacto', seccion: 'contacto' });
+app.get('/login', (req, res) => {
+  res.render('index', { titulo: 'Login', seccion: 'login' });
 });
-
+/* 
 // Servir plantillas parciales como texto plano
 app.get('/partial/:seccion', (req, res) => {
   const seccion = req.params.seccion;
-  if (seccion === 'contacto') {
-    res.render('contacto', { layout: false });
+  if (seccion === 'login') {
+    res.render('login', { layout: false });
   } else {
     res.status(404).send('Sección no encontrada');
   }
-});
+}); */
 
 // Manejador de errores para rutas no encontradas (404) 
 app.use((req, res, next) => {
@@ -59,10 +59,6 @@ app.use((err, req, res, next) => {
       mensaje: 'Ha ocurrido un error en el servidor. Por favor, intenta nuevamente más tarde.'
     });
 });
-
-
-
-
 
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);

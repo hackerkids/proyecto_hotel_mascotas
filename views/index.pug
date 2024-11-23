@@ -17,21 +17,21 @@ html(lang="es")
         ol
           li: a(href="/" class="nav-link") Home
           li: a(href="/nosotros" class="nav-link") Nosotros
-          li: a(href="/servicios" class="nav-link") Servicios
+          //- li: a(href="/servicios" class="nav-link") Servicios
           li: a(href="/galeria" class="nav-link") Galería
-          li: a(href="/contacto" class="nav-link") Contacto
+          li: a(href="/login" class="nav-link") Login
 
     main#main-content
       if seccion === 'index'
         include home.pug
       else if seccion === 'nosotros'
         include nosotros.pug
-      else if seccion === 'servicios'
-        include servicios.pug
+      //- else if seccion === 'servicios'
+      //-   include servicios.pug
       else if seccion === 'galeria'
         include galeria.pug
-      else if seccion === 'contacto'
-        include contacto.pug
+      else if seccion === 'login'
+        include login.pug
       else
         p Contenido por defecto del sitio web.
 
