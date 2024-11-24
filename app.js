@@ -30,6 +30,8 @@ app.get('/galeria', (req, res) => {
 app.get('/login', (req, res) => {
   res.render('index', { titulo: 'Login', seccion: 'login' });
 });
+
+
 /* 
 // Servir plantillas parciales como texto plano
 app.get('/partial/:seccion', (req, res) => {

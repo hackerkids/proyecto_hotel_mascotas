@@ -130,6 +130,16 @@ header {
         height: 500px;
         background-color: rgba(167, 172, 230, 0.203);
 
+        .titulo_login{
+            padding: 0;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+            width: auto;
+            height: auto;
+            /* border: 1px solid rgb(26, 255, 0); */
+        }
+
 }
 
 .galeria{
@@ -413,6 +423,16 @@ footer {
             font-size: 20px;
             color: blue;
         }
+        
+        .mi_a{
+            margin: 0;
+            font-size: 20px;
+            color: blue;
+            font-family: 'Sour Gummy', cursive;
+            text-decoration: none; 
+        }
+
+        
     }
 
     nav {
